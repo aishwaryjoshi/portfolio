@@ -7,13 +7,15 @@
     <title>Aishwary Joshi's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Aishwary Joshi's portfolio showcasing data engineering and web development projects.">
+    <meta name="description"
+        content="Aishwary Joshi's portfolio showcasing data engineering and web development projects.">
     <meta name="keywords" content="data engineering, web development, python, portfolio">
 
     <style>
         /* Apply background image */
         body {
-            background-image: url('gies.png'); /* Use the uploaded image */
+            background-image: url('gies.png');
+            /* Use the uploaded image */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -21,9 +23,9 @@
             color: #fff;
         }
 
-        /* Adjust the overlay for better readability */
+        /* Overlay for better readability */
         .overlay {
-            background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay (30% opacity) */
+            background-color: rgba(0, 0, 0, 0.3);
             position: absolute;
             top: 0;
             left: 0;
@@ -33,32 +35,49 @@
         }
 
         /* Styling the text for better contrast */
-        h1, h2, h3, p {
-            color: #f8f9fa; /* Light grey text for better readability */
+        h1,
+        h2,
+        h3,
+        p {
+            color: #f8f9fa;
         }
 
-        ul {
-            color: #f8f9fa; /* Adjust list color to be consistent */
+        /* Navbar styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
-        /* Adjust container background to be more transparent */
+        .navbar-brand,
+        .nav-link {
+            color: #f8f9fa;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #ddd;
+        }
+
+        /* Container background and styling */
         .container {
             position: relative;
             z-index: 1;
-            background: rgba(0, 0, 0, 0.5); /* Slightly more transparent background (50% opacity) */
+            background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
             max-width: 90%;
             margin: 0 auto;
         }
 
-        a {
-            color: #f8f9fa; /* Ensure links are visible and readable */
-            text-decoration: underline;
+        /* Project buttons */
+        .btn-project {
+            margin-top: 10px;
+            background-color: #007bff;
+            border-color: #007bff;
         }
 
-        a:hover {
-            color: #ddd; /* Hover effect for links */
+        .btn-project:hover {
+            background-color: #0056b3;
+            border-color: #004085;
         }
 
         /* Responsive font and layout adjustments */
@@ -66,9 +85,15 @@
             h1 {
                 font-size: 1.8rem;
             }
+
             h2 {
                 font-size: 1.5rem;
             }
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
         }
     </style>
 </head>
@@ -77,50 +102,94 @@
     <!-- Overlay for the background image -->
     <div class="overlay"></div>
 
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Aishwary Joshi</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container text-center mt-5">
         <header>
-            <h1>Welcome to My Portfolio</h1>
-            <p class="lead">Transforming data into actionable insights through scalable infrastructure and automation</p>
+            <h1 id="home"># Welcome to My Portfolio!</h1>
+            <p class="lead">Transforming data into actionable insights through scalable infrastructure and automation
+            </p>
         </header>
 
-        <section class="about-me mt-5">
-            <h2>About Me</h2>
-            <p>Hi, I’m <strong>Aishwary Joshi</strong>, a data engineer and business analyst with experience in transforming data into actionable insights. I specialize in building scalable data infrastructure and creating impactful visualizations that drive business growth. With expertise in cloud platforms like AWS and GCP, I focus on solving real-world problems through data analytics and automation.</p>
+        <!-- About Me Section -->
+        <section id="about" class="about-me mt-5">
+            <h2>## About Me</h2>
+            <p>Hi, I’m <strong>Aishwary Joshi</strong>, a data engineer and business analyst with experience in
+                transforming data into actionable insights. I specialize in building scalable data infrastructure and
+                creating impactful visualizations that drive business growth. With expertise in cloud platforms like AWS
+                and GCP, I focus on solving real-world problems through data analytics and automation.</p>
         </section>
 
-        <section class="skills mt-5">
-            <h2>Skills</h2>
+        <!-- Skills Section -->
+        <section id="skills" class="skills mt-5">
+            <h2>## Skills</h2>
             <ul class="text-left mx-auto" style="max-width: 600px;">
                 <li><strong>Programming Languages:</strong> Python, SQL, Terraform, TypeScript, Scala</li>
-                <li><strong>Technologies:</strong> AWS (S3, Lambda, Athena, Glue, DynamoDB, Redshift), GCP (BigQuery, Dataproc, Cloud Storage), Docker, PySpark, MongoDB, HDFS</li>
+                <li><strong>Technologies:</strong> AWS (S3, Lambda, Athena, Glue, DynamoDB, Redshift), GCP (BigQuery,
+                    Dataproc, Cloud Storage), Docker, PySpark, MongoDB, HDFS</li>
                 <li><strong>Data Visualization:</strong> Tableau, PowerBI, Looker, Matplotlib</li>
                 <li><strong>Developer Tools:</strong> Git, Jupyter Notebook, VS Code</li>
             </ul>
         </section>
 
-        <section class="projects mt-5">
-            <h2>Featured Projects</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="projects mt-5">
+            <h2>## Featured Projects</h2>
+
             <div class="project mb-4">
-                <h3><a href="https://github.com/aishwaryjoshi/video-game-analysis" target="_blank">Video Game Sales and Steam Traffic Analysis</a></h3>
-                <p>Analyzed large datasets from Kaggle to find correlations between video game sales and Steam traffic. Developed a data pipeline using AWS Lambda, Glue, and S3 for data processing and transformation.</p>
+                <h3><a href="https://github.com/aishwaryjoshi/video-game-analysis" target="_blank">1. Video Game Sales
+                        and Steam Traffic Analysis</a></h3>
+                <p>Analyzed large datasets from Kaggle to find correlations between video game sales and Steam traffic.
+                    Developed a data pipeline using AWS Lambda, Glue, and S3 for data processing and transformation.</p>
                 <p><strong>Technologies used:</strong> Python, AWS Lambda, AWS Glue, AWS S3</p>
+                <a href="https://github.com/aishwaryjoshi/video-game-analysis" class="btn btn-project"
+                    target="_blank">View Project</a>
             </div>
 
             <div class="project mb-4">
-                <h3><a href="https://github.com/aishwaryjoshi/gold-pricing-etl" target="_blank">Gold Pricing ETL Pipeline</a></h3>
-                <p>Created an ETL pipeline to collect and analyze historical gold price data, along with news sentiment analysis. Developed a trading model based on statistical analysis and word clouds.</p>
+                <h3><a href="https://github.com/aishwaryjoshi/gold-pricing-etl" target="_blank">2. Gold Pricing ETL
+                        Pipeline</a></h3>
+                <p>Created an ETL pipeline to collect and analyze historical gold price data, along with news sentiment
+                    analysis. Developed a trading model based on statistical analysis and word clouds.</p>
                 <p><strong>Technologies used:</strong> AWS S3, Python, Statistics, API Development</p>
+                <a href="https://github.com/aishwaryjoshi/gold-pricing-etl" class="btn btn-project" target="_blank">View
+                    Project</a>
             </div>
 
             <div class="project mb-4">
-                <h3><a href="https://github.com/aishwaryjoshi/trade-analytics-dashboard" target="_blank">Cloud-Based Trade Analytics Dashboard</a></h3>
-                <p>Built trade analytics dashboards for a multinational investment bank using GCP BigQuery and Looker. Implemented distributed data processing and optimized storage using partitioning and clustering techniques.</p>
+                <h3><a href="https://github.com/aishwaryjoshi/trade-analytics-dashboard" target="_blank">3. Cloud-Based
+                        Trade Analytics Dashboard</a></h3>
+                <p>Built trade analytics dashboards for a multinational investment bank using GCP BigQuery and Looker.
+                    Implemented distributed data processing and optimized storage using partitioning and clustering
+                    techniques.</p>
                 <p><strong>Technologies used:</strong> GCP BigQuery, Looker, PySpark, HDFS</p>
+                <a href="https://github.com/aishwaryjoshi/trade-analytics-dashboard" class="btn btn-project"
+                    target="_blank">View Project</a>
             </div>
         </section>
 
-        <section class="certifications mt-5">
-            <h2>Certifications</h2>
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications mt-5">
+            <h2>## Certifications</h2>
             <ul class="text-left mx-auto" style="max-width: 600px;">
                 <li>AWS Certified Cloud Practitioner</li>
                 <li>Master Data Engineering using GCP Data Analytics (Udemy)</li>
@@ -128,10 +197,17 @@
             </ul>
         </section>
 
+        <!-- Footer Section -->
         <footer class="mt-5">
-            <p>Feel free to explore my repositories and reach out to discuss any opportunities for collaboration!</p>
+            <p>Feel free to explore my repositories and <a href="mailto:aishwary@example.com">reach out</a> to discuss
+                any opportunities for collaboration!</p>
         </footer>
     </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
