@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwary Joshi's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <meta name="description"
-        content="Aishwary Joshi's portfolio showcasing data engineering and web development projects.">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Aishwary Joshi's portfolio showcasing data engineering and web development projects.">
     <meta name="keywords" content="data engineering, web development, python, portfolio">
-
-
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Welcome to My Portfolio</h1>
-            </div>
-        </div>
-    </div>
-    <img src="project-screenshot.png" alt="Project Screenshot" class="img-fluid">
-    <h2>Project 1: Data Analysis</h2>
-    <p>This project involved analyzing sales data using Python and Pandas. Key features include data cleaning and
-        visualization.</p>
+    <div class="container text-center mt-5">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead">Transforming data into actionable insights through scalable infrastructure and automation</p>
+        </header>
 
-    <p>Hi, I'm Aishwary Joshi, a data engineer and web developer.</p>
+        <section class="about-me mt-5">
+            <h2>About Me</h2>
+            <p>Hi, I’m <strong>Aishwary Joshi</strong>, a data engineer and business analyst with experience in transforming data into actionable insights. I specialize in building scalable data infrastructure and creating impactful visualizations that drive business growth. With expertise in cloud platforms like AWS and GCP, I focus on solving real-world problems through data analytics and automation.</p>
+        </section>
+
+        <section class="skills mt-5">
+            <h2>Skills</h2>
+            <ul class="text-left mx-auto" style="max-width: 600px;">
+                <li><strong>Programming Languages:</strong> Python, SQL, Terraform, TypeScript, Scala</li>
+                <li><strong>Technologies:</strong> AWS (S3, Lambda, Athena, Glue, DynamoDB, Redshift), GCP (BigQuery, Dataproc, Cloud Storage), Docker, PySpark, MongoDB, HDFS</li>
+                <li><strong>Data Visualization:</strong> Tableau, PowerBI, Looker, Matplotlib</li>
+                <li><strong>Developer Tools:</strong> Git, Jupyter Notebook, VS Code</li>
+            </ul>
+        </section>
+
+        <section class="projects mt-5">
+            <h2>Featured Projects</h2>
+            <div class="project mb-4">
+                <h3><a href="https://github.com/aishwaryjoshi/video-game-analysis" target="_blank">Video Game Sales and Steam Traffic Analysis</a></h3>
+                <p>Analyzed large datasets from Kaggle to find correlations between video game sales and Steam traffic. Developed a data pipeline using AWS Lambda, Glue, and S3 for data processing and transformation.</p>
+                <p><strong>Technologies used:</strong> Python, AWS Lambda, AWS Glue, AWS S3</p>
+            </div>
+
+            <div class="project mb-4">
+                <h3><a href="https://github.com/aishwaryjoshi/gold-pricing-etl" target="_blank">Gold Pricing ETL Pipeline</a></h3>
+                <p>Created an ETL pipeline to collect and analyze historical gold price data, along with news sentiment analysis. Developed a trading model based on statistical analysis and word clouds.</p>
+                <p><strong>Technologies used:</strong> AWS S3, Python, Statistics, API Development</p>
+            </div>
+
+            <div class="project mb-4">
+                <h3><a href="https://github.com/aishwaryjoshi/trade-analytics-dashboard" target="_blank">Cloud-Based Trade Analytics Dashboard</a></h3>
+                <p>Built trade analytics dashboards for a multinational investment bank using GCP BigQuery and Looker. Implemented distributed data processing and optimized storage using partitioning and clustering techniques.</p>
+                <p><strong>Technologies used:</strong> GCP BigQuery, Looker, PySpark, HDFS</p>
+            </div>
+        </section>
+
+        <section class="certifications mt-5">
+            <h2>Certifications</h2>
+            <ul class="text-left mx-auto" style="max-width: 600px;">
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Master Data Engineering using GCP Data Analytics (Udemy)</li>
+                <li>Spark and Python for Big Data with PySpark (Udemy)</li>
+            </ul>
+        </section>
+
+        <footer class="mt-5">
+            <p>Feel free to explore my repositories and reach out to discuss any opportunities for collaboration!</p>
+        </footer>
+    </div>
 </body>
 
 </html>
