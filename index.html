@@ -13,7 +13,7 @@
     <style>
         /* Apply background image */
         body {
-            background-image: url('project-screenshot.png');
+            background-image: url('project-screenshot.png'); /* Use the uploaded image */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -21,9 +21,9 @@
             color: #fff;
         }
 
-        /* Adding a semi-transparent overlay */
+        /* Adjust the overlay for better readability */
         .overlay {
-            background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+            background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay (30% opacity) */
             position: absolute;
             top: 0;
             left: 0;
@@ -32,22 +32,33 @@
             z-index: -1;
         }
 
-        /* Styling the text to be more readable over the background */
+        /* Styling the text for better contrast */
         h1, h2, h3, p {
-            color: #fff; /* Ensuring text is white for contrast */
+            color: #f8f9fa; /* Light grey text for better readability */
         }
 
         ul {
-            color: #fff; /* White text for list items */
+            color: #f8f9fa; /* Adjust list color to be consistent */
         }
 
-        /* Adjust container to be more readable */
+        /* Adjust container background to be more transparent */
         .container {
-            position: relative; /* To layer content above the background */
+            position: relative;
             z-index: 1;
-            background: rgba(0, 0, 0, 0.7); /* Optional: Add a slight transparent background behind the content */
+            background: rgba(0, 0, 0, 0.5); /* Slightly more transparent background (50% opacity) */
             padding: 20px;
             border-radius: 10px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #f8f9fa; /* Ensure links are visible and readable */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ddd; /* Hover effect for links */
         }
 
         /* Responsive font and layout adjustments */
